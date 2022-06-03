@@ -241,7 +241,7 @@ PrimaryTemp_2 <- remove_outliers(d1$PrimaryTemp3)
 summary(PrimaryTemp_2)
 
 
-### Selection of variables for the study
+### Selecting variables for the study
 # Correlation analysis between variables
 d_cor <- data.frame(d1$ABV, d1$OG, d1$BoilSize, d1$BoilTime, d1$BoilGravity3, d1$Efficiency, d1$MashThickness3, d1$PrimaryTemp3)
 cor_matrix <- cor(d_cor)
@@ -251,7 +251,7 @@ corrplot(cor_matrix, type = "upper", order = "hclust", tl.col = "black")
 # Except for this pair, the variables showed almost zero correlation, so all of the variables examined above, except for Boil Gravity, will be selected for the study.
 
 ### Data sampling
-# Selection of units will be done using stratified sampling to keep equal proportions of each brewing method.
+# Selecting units will be done using stratified sampling to keep equal proportions of each brewing method.
 d2 <- data.frame(d1$BeerID, d1$ABV, d1$OG, d1$BoilSize, d1$BoilTime, d1$Efficiency, d1$MashThickness3, d1$SugarScale, d1$BrewMethod, d1$PrimaryTemp3)
 colnames(d2) <- c("BeerID","ABV","OG","BoilSize","BoilTime","Efficiency","MashThickness","SugarScale","BrewMethod","PrimaryTemp")
 
