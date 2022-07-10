@@ -1,6 +1,6 @@
 ## Data preparation
 
-This repository shows the process of preparing the data for creating a statistical model in the R programming language.
+This repository shows the process of preparing data for creating a statistical model in the R programming language.
 
 The dataset concerns the parameters used in the beer brewing process. 11 variables were arbitrarily selected from a dataset containing 29 variables. These variables are to be used to build a statistical model that examines the effect of selected variables on alcohol by volume.
 
